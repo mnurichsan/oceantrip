@@ -1,464 +1,473 @@
 :root {
-    --primary-color: #6AC7FF;
+  --primary-color: #6ac7ff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-    font-family: 'poppins';
+  font-family: "poppins";
 }
 
 /* nav */
 .navbar .navbar-brand img {
-    width: 3.5rem;
+  width: 3.5rem;
 }
 
 /* jumbotron */
 .jumbotron.jumbotron-fluid {
-    background: url(../img/bg-header.svg);
-    width: 100%;
-    height: 600px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(../img/bg-header.svg);
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron .jumbotron__column__text {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 .jumbotron .jumbotron__column__text h1 {
-    color: white;
-    font-weight: 300;
-    display: none;
+  color: white;
+  font-weight: 300;
+  display: none;
 }
 
 .jumbotron .jumbotron__column__text h1 span {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* about */
 .about {
-    background: #fcfcfc;
-    padding: 20px;
-    margin-top: -2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  background: #fcfcfc;
+  padding: 20px;
+  margin-top: -2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about p {
-    color: rgba(0, 0, 0, .6);
-    text-align: center;
-    font-size: .8rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 /* destination */
 .destination {
-    margin: 4rem;
+  margin: 4rem;
 }
 
 .destination .title-item-gimmick .left {
-    display: inline-block;
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .destination .title-item {
-    position: relative;
+  position: relative;
 }
 
 .destination .title-item h3 {
-    text-align: center;
-    font-weight: 500;
+  text-align: center;
+  font-weight: 500;
 }
 
 .destination .card {
-    margin: 30px -40px;
+  margin: 30px -40px;
 }
 
 .destination .card:hover {
-    transform: scale(1.07);
-    transition: 0.3s;
+  transform: scale(1.07);
+  transition: 0.3s;
 }
 
 .destination .card img {
-    height: 170px;
+  height: 170px;
 }
 
 .destination .card .card-body .card-text {
-    font-size: smaller;
-    color: rgba(0, 0, 0, .7);
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* features */
 .features {
-    background: #fcfcfc;
-    padding: 50px;
-    margin-top: -4rem;
+  background: #fcfcfc;
+  padding: 50px;
+  margin-top: -4rem;
 }
 
 .features .title-item-job {
-    margin-left: 0;
-    margin-top: 2rem;
+  margin-left: 0;
+  margin-top: 2rem;
 }
 
 .features .col-text-job {
-    position: relative;
-    border-left: 1px solid rgba(0, 0, 0, .5);
-    margin-top: 1.2rem;
-    margin-left: 0rem;
+  position: relative;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 1.2rem;
+  margin-left: 0rem;
 }
 
 .features .col-text-job p {
-    color: rgba(0, 0, 0, .8);
-    font-weight: 400;
-    margin-left: 1.5rem;
-    font-size: .9rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .features .col-text-job p::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 12px;
-    height: 12px;
-    left: -.37rem;
-    border-radius: 50%;
-    background: white;
-    border: 2px solid var(--primary-color);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  left: -0.37rem;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--primary-color);
 }
 
 /* kelebihan */
 .features .title-item-kelebihan {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .features .col-text-features p {
-    color: rgba(0, 0, 0, .8);
-    font-weight: 400;
-    margin-left: 1.5rem;
-    font-size: .9rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .features .col-text-features {
-    position: relative;
-    border-left: 1px solid rgba(0, 0, 0, .5);
-    margin-top: 1.2rem;
-    margin-left: 0;
-    margin-bottom: 3rem;
+  position: relative;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 1.2rem;
+  margin-left: 0;
+  margin-bottom: 3rem;
 }
 
 .features .col-text-features p::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 12px;
-    height: 12px;
-    left: -.37rem;
-    border-radius: 50%;
-    background: white;
-    border: 2px solid var(--primary-color);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  left: -0.37rem;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--primary-color);
 }
 
 .features img.browsur {
-    height: 435px;
-    width: 450px;
+  height: 435px;
+  width: 450px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .destination .card {
-        margin: 30px auto;
-    }
+  .destination .card {
+    margin: 30px auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* jumbotron */
+  .jumbotron .jumbotron__column__text h1 {
+    color: white;
+    font-weight: 300;
+  }
 
-    /* jumbotron */
-    .jumbotron .jumbotron__column__text h1 {
-        color: white;
-        font-weight: 300;
-    }
+  /* about */
+  .about p {
+    text-align: left;
+    font-size: 1rem;
+  }
 
-    /* about */
-    .about p {
-        text-align: left;
-        font-size: 1rem;
-    }
+  /* destination */
+  .destination .card-destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    /* destination */
-    .destination .card-destination {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .destination .card-destination .card {
+    width: 20rem;
+    margin-left: -6rem;
+  }
 
-    .destination .card-destination .card {
-        width: 20rem;
-        margin-left: -6rem;
-    }
+  .destination .title-item .title-item-gimmick {
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 15px;
+  }
 
-    .destination .title-item .title-item-gimmick {
-        position: absolute;
-        border: 1px solid #e5e5e5;
-        top: 15px;
-    }
+  .destination .title-item .title-item-gimmick.left {
+    position: absolute;
+    left: 0rem;
+    margin-left: -1rem;
+    width: 200px;
+  }
 
-    .destination .title-item .title-item-gimmick.left {
-        position: absolute;
-        left: 0rem;
-        margin-left: -1rem;
-        width: 200px;
-    }
+  .destination .title-item .title-item-gimmick.right {
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+    width: 200px;
+  }
 
-    .destination .title-item .title-item-gimmick.right {
-        position: absolute;
-        right: 0;
-        margin-right: -1rem;
-        width: 200px;
-    }
+  /* features */
+  .features {
+    margin-top: -4rem;
+  }
 
-    /* features */
-    .features {
-        margin-top: -4rem;
-    }
+  .features .title-item-job {
+    margin-left: 1.5rem;
+    margin-top: 0;
+  }
 
-    .features .title-item-job {
-        margin-left: 1.5rem;
-        margin-top: 0;
-    }
+  .features .col-text-job {
+    margin-left: 4rem;
+  }
 
-    .features .col-text-job {
-        margin-left: 4rem;
-    }
+  .features .col-text-features {
+    margin-left: 4rem;
+    margin-bottom: 0rem;
+  }
 
-    .features .col-text-features {
-        margin-left: 4rem;
-        margin-bottom: 0rem;
-    }
-
-    /* kelebihan */
-    .features .title-item-kelebihan {
-        margin-top: 0rem;
-    }
+  /* kelebihan */
+  .features .title-item-kelebihan {
+    margin-top: 0rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .jumbotron .jumbotron__column__text h1 {
+    color: white;
+    font-weight: 300;
+    display: block;
+  }
 
-    /* about */
-    .about {
-        background: #fcfcfc;
-        padding: 20px;
-        margin-top: -2rem;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-    }
+  /* about */
+  .about {
+    background: #fcfcfc;
+    padding: 20px;
+    margin-top: -2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
-    .about p {
-        text-align: left;
-        font-size: 1rem;
-    }
+  .about p {
+    text-align: left;
+    font-size: 1rem;
+  }
 
-    /* destination */
-    .destination {
-        margin: 4rem;
-    }
+  /* destination */
+  .destination {
+    margin: 4rem;
+  }
 
-    .destination .title-item .title-item-gimmick {
-        position: absolute;
-        border: 1px solid #e5e5e5;
-        top: 15px;
-    }
+  .destination .title-item .title-item-gimmick {
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 15px;
+  }
 
-    .destination .title-item .title-item-gimmick.left {
-        position: absolute;
-        left: 0rem;
-        margin-left: -1rem;
-        width: 310px;
-    }
+  .destination .title-item .title-item-gimmick.left {
+    position: absolute;
+    left: 0rem;
+    margin-left: -1rem;
+    width: 310px;
+  }
 
-    .destination .title-item .title-item-gimmick.right {
-        position: absolute;
-        right: 0;
-        margin-right: -1rem;
-        width: 310px;
-    }
+  .destination .title-item .title-item-gimmick.right {
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+    width: 310px;
+  }
 
-    .destination .title-item {
-        position: relative;
-    }
+  .destination .title-item {
+    position: relative;
+  }
 
-    .destination .title-item h3 {
-        text-align: center;
-        font-weight: 500;
-    }
+  .destination .title-item h3 {
+    text-align: center;
+    font-weight: 500;
+  }
 
-    .destination .card {
-        margin: 30px -10px;
-        width: 13.5rem;
-    }
+  .destination .card {
+    margin: 30px -10px;
+    width: 13.5rem;
+  }
 
-    .destination .card:hover {
-        transform: scale(1.02);
-        transition: 0.3s;
-    }
+  .destination .card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
 
-    .destination .card img {
-        height: 170px;
-    }
+  .destination .card img {
+    height: 170px;
+  }
 
-    .destination .card .card-body .card-text {
-        font-size: smaller;
-        color: rgba(0, 0, 0, .7);
-    }
+  .destination .card .card-body .card-text {
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.7);
+  }
 
-    /* features */
-    .features {
-        margin-top: -5rem;
-    }
+  /* features */
+  .features {
+    margin-top: -5rem;
+  }
 
-    .features .title-item-job {
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
+  .features .title-item-job {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
 
-    .features .col-text-job {
-        margin-left: 2rem;
-    }
+  .features .col-text-job {
+    margin-left: 2rem;
+  }
 
-    .features .col-text-job p {
-        margin-left: 1.5rem;
-    }
+  .features .col-text-job p {
+    margin-left: 1.5rem;
+  }
 
-    /* kelebihan */
-    .features .title-item-kelebihan {
-        margin-top: 4rem;
-    }
+  /* kelebihan */
+  .features .title-item-kelebihan {
+    margin-top: 4rem;
+  }
 
-    .features .col-text-features p {
-        margin-left: 2rem;
-    }
+  .features .col-text-features p {
+    margin-left: 2rem;
+  }
 
-    .features .col-text-features {
-        margin-left: 2.5rem;
-    }
+  .features .col-text-features {
+    margin-left: 2.5rem;
+  }
 
-    .features img.browsur {
-        margin-left: 1rem;
-        margin-top: 2rem;
-        height: 435px;
-        width: 450px;
-    }
+  .features img.browsur {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 435px;
+    width: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .jumbotron .jumbotron__column__text h1 {
+    color: white;
+    font-weight: 300;
+    display: block;
+  }
 
-    /* about */
-    .about {
-        background: #fcfcfc;
-        padding: 20px;
-        margin-top: -2rem;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-    }
+  /* about */
+  .about {
+    background: #fcfcfc;
+    padding: 20px;
+    margin-top: -2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
-    .about p {
-        text-align: left;
-        font-size: 1rem;
-    }
+  .about p {
+    text-align: left;
+    font-size: 1rem;
+  }
 
-    /* destination */
-    .destination {
-        margin: 4rem;
-    }
+  /* destination */
+  .destination {
+    margin: 4rem;
+  }
 
-    .destination .title-item .title-item-gimmick {
-        position: absolute;
-        border: 1px solid #e5e5e5;
-        top: 15px;
-    }
+  .destination .title-item .title-item-gimmick {
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 15px;
+  }
 
-    .destination .title-item .title-item-gimmick.left {
-        position: absolute;
-        left: 0rem;
-        margin-left: -1rem;
-        width: 450px;
-    }
+  .destination .title-item .title-item-gimmick.left {
+    position: absolute;
+    left: 0rem;
+    margin-left: -1rem;
+    width: 450px;
+  }
 
-    .destination .title-item .title-item-gimmick.right {
-        position: absolute;
-        right: 0;
-        margin-right: -1rem;
-        width: 450px;
-    }
+  .destination .title-item .title-item-gimmick.right {
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+    width: 450px;
+  }
 
-    .destination .title-item {
-        position: relative;
-    }
+  .destination .title-item {
+    position: relative;
+  }
 
-    .destination .title-item h3 {
-        text-align: center;
-        font-weight: 500;
-    }
+  .destination .title-item h3 {
+    text-align: center;
+    font-weight: 500;
+  }
 
-    .destination .card {
-        margin: 30px -5px;
-        width: 17rem;
-    }
+  .destination .card {
+    margin: 30px -5px;
+    width: 17rem;
+  }
 
-    .destination .card:hover {
-        transform: scale(1.07);
-        transition: 0.3s;
-    }
+  .destination .card:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+  }
 
-    .destination .card img {
-        height: 170px;
-    }
+  .destination .card img {
+    height: 170px;
+  }
 
-    .destination .card .card-body .card-text {
-        font-size: smaller;
-        color: rgba(0, 0, 0, .7);
-    }
+  .destination .card .card-body .card-text {
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.7);
+  }
 
-    /* features */
-    .features {
-        margin-top: -5rem;
-    }
+  /* features */
+  .features {
+    margin-top: -5rem;
+  }
 
-    .features .title-item-job {
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
+  .features .title-item-job {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
 
-    .features .col-text-job {
-        margin-left: 2rem;
-    }
+  .features .col-text-job {
+    margin-left: 2rem;
+  }
 
-    .features .col-text-job p {
-        margin-left: 1.5rem;
-    }
+  .features .col-text-job p {
+    margin-left: 1.5rem;
+  }
 
-    /* kelebihan */
-    .features .title-item-kelebihan {
-        margin-top: 6.5rem;
-    }
+  /* kelebihan */
+  .features .title-item-kelebihan {
+    margin-top: 6.5rem;
+  }
 
-    .features .col-text-features p {
-        margin-left: 2rem;
-    }
+  .features .col-text-features p {
+    margin-left: 2rem;
+  }
 
-    .features .col-text-features {
-        margin-left: 2.5rem;
-    }
+  .features .col-text-features {
+    margin-left: 2.5rem;
+  }
 
-    .features img.browsur {
-        margin-left: 1rem;
-        margin-top: 2rem;
-        height: 435px;
-        width: 450px;
-    }
+  .features img.browsur {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 435px;
+    width: 450px;
+  }
 }
