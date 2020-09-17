@@ -9,22 +9,21 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
 
   <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.css" />
 
   <!-- style css -->
-  <link rel="stylesheet" href="css/styleDaftar.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <title>Ocean Trip</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="img/logo.png" alt="" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -32,18 +31,15 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Beranda</a>
+            <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Tentang Kami</a>
+            <a class="nav-link" href="#">Destination</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pusat-bantuan.html">Pusat Bantuan</a>
+            <a class="nav-link" href="#">Pricing</a>
           </li>
         </ul>
       </div>
@@ -52,148 +48,129 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="text-heading" class="display-4">
-        Wisata ke Pulau-pulau dengan <span>edukasi</span> serta
-        <span>keamanan</span> dengan <span>harga</span> yang Murah.
-      </h1>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-10 info-panel shadow">
-        <div class="row text-center">
-          <div class="col-lg">
-            <picture>
-              <img src="img/pusat-bantuan/Group 519.png" alt="" />
-            </picture>
-            <p>Edukasi Wisata</p>
-          </div>
-          <div class="col-lg">
-            <picture>
-              <img src="img/pusat-bantuan/Group 640.png" alt="" />
-            </picture>
-            <p>Keamanan</p>
-          </div>
-          <div class="col-lg">
-            <picture>
-              <img src="img/pusat-bantuan/calvary.png" alt="" />
-            </picture>
-            <p>Harga Yang Murah</p>
-          </div>
-          <div class="col-lg friendly">
-            <picture>
-              <img src="img/pusat-bantuan/high-five.png" alt="" />
-            </picture>
-            <p>Terpercaya</p>
-          </div>
-        </div>
+      <div class="jumbotron__column__text">
+        <h1 class="text-center">Wisata ke <span>Pulau-pulau</span> dengan <span>edukasi</span> serta
+          <span>keamanan</span> dengan harga yang <span>Murah</span>.
+        </h1>
       </div>
     </div>
   </div>
 
-  <section class="main mt-5">
+  <section class="about">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h3>Apa Yang</h3>
-          <h1>Kami Kerjakan</h1>
-          <picture>
-            <img src="img/kerjakan.jpg" alt="" class="img-fluid" />
-          </picture>
-        </div>
-        <div class="col-12 col-md-6 d-flex align-items-center">
-          <div class="keterangan">
-            <div class="isi">
-              <span>1</span>
-              <p>
-                Memberikan edukasi kepada siswa SMA dan masyarakat umum
-                tentang keadaan ekosistem laut
-              </p>
-            </div>
-            <div class="isi">
-              <span>2</span>
-              <p>
-                Memberikan kenyamanan wisatawan dalam berekreasi ke
-                pulau-pulau dengan menyediakan paket menarik di liburan akhir
-                pekan.
-              </p>
-            </div>
-            <div class="isi">
-              <span>3</span>
-              <p>
-                Membantu masyarakat menemukan agen perjalanan wisata ke
-                pulau-pulau yang terpercaya dengan keamanan dan harga yang
-                murah.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="col-12">
+        <h3 class="text-center">Selamat Datang di Ocean Travel</h3>
+        <p>Ocean trip adalah Agen yang bergerak dalam bidang pelayanan jasa wisata ke Pulau-pulau Spermonde dan
+          memberikan edukasi serta keamanan dengan harga yang Murah.</p>
       </div>
     </div>
   </section>
 
-  <section class="download">
+  <section class="destination">
     <div class="container">
+
       <div class="row">
         <div class="col-12">
-          <h1>Layanan</h1>
-          <hr />
+          <div class="title-item">
+            <div class="title-item-gimmick left"></div>
+            <h3>Top Destination</h3>
+            <div class="title-item-gimmick right"></div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 offset-md-1"></div>
-        <div class="col-12 col-md-4"></div>
+
+      <div class="row card-destination">
+        <div class="col-md-3">
+          <div class="card shadow bg-white rounded">
+            <img src="img/samalona.jpg" class="card-img-top" alt="samalona">
+            <div class="card-body">
+              <h5 class="card-title">Pulau Samalona</h5>
+              <p class="card-text">Fun Snorkeling Trip di Pulau Samalona.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow bg-white rounded">
+            <img src="img/pulau2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow bg-white rounded">
+            <img src="img/pulau3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow bg-white rounded">
+            <img src="img/pulau3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <section class="features">
     <div class="container">
-      <div class="footer-top">
-        <div class="row">
-          <div class="col-12 col-md-3 mt-md-4">
-            <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem" />
-            <ul class="nav-footer">
-              <li class="footer-item">
-                <a href="#" class="footer-link"><span>Alamat :</span> Sudiang</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link"><span>Telp :</span> +628</a>
-              </li>
-              <li class="footer-item">
-                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email :</span> ocean@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-12 col-md-3">
-            <div class="follow-us">
-              <h3>Follow Us</h3>
-              <a href="https://www.facebook.com/angkut.apps" target="_blank">
-                <img src="img/Group 529.png" alt="" style="width: 3rem" />
-              </a>
-              <a href="https://twitter.com/AngkutI" target="_blank">
-                <img src="img/Group 530.png" alt="" style="width: 3rem" />
-              </a>
-              <a href="https://www.linkedin.com/in/angkut-apps-7a11a71ab/" target="_blank">
-                <img src="img/Group 531.png" alt="" style="width: 3rem" />
-              </a>
-              <a href="https://www.instagram.com/angkutapps/" target="_blank">
-                <img src="img/Group 532.png" alt="" style="width: 3rem" />
-              </a>
-            </div>
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex align-items-center">
+          <img src="img/meet.jpeg" alt="" class="img-fluid ml-md-4">
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="title-item-job">Apa Yang Kami Kerjakan</h4>
+          <div class="col-text-job">
+            <p>Memberikan edukasi kepada siswa SMA dan masyarakat umum tentang keadaan ekosistem laut</p>
+            <p>Memberikan kenyamanan wisatawan dalam berekreasi ke pulau-pulau dengan menyediakan paket
+              menarik di liburan akhir pekan.</p>
+            <p>Membantu masyarakat menemukan agen perjalanan wisata ke pulau-pulau yang terpercaya dengan
+              keamanan dan harga yang murah. </p>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Akhir Footer -->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+      <div class="row mt-md-2">
+        <div class="col-12 col-md-6">
+          <h4 class="title-item-kelebihan ml-md-4">Kelebihan Kami</h4>
+          <div class="col-text-features">
+            <p>Kami menyediakan layanan pengantaran untuk rekreasi ke pulau-pulau Spermonde.</p>
+            <p>Memprioritaskan keamanan dan kenyamanan bagi wisatawan yang ingin memakai jasa kami untuk
+              menikmati keindahan pulau.</p>
+            <p>Meningkatkan pertumbuhan ekonomi di bidang wisata dengan membuka lapangan kerja bagi
+              masyarakat pesisir pulau.</p>
+            <p>Memberikan pengetahuan kepada wisatawan tentang ekosistem laut.
+            </p>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex align-items-center">
+          <img src="img/eduardo-nascimento-_WWhXbzo72Q-unsplash.jpg" alt="" class="img-fluid  mt-md-n1 ml-md-n1">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

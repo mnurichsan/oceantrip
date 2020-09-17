@@ -1,437 +1,569 @@
-/* global style */
+:root {
+  --primary-color: #E54919;
+  --nav-color: #E54919;
+  --color: #6ac7ff;
+}
 
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --green: #16a085;
-}
-
 html {
-  font-size: 10px;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-}
+  font-family: 'Oswald', sans-serif;
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-p {
-  font-size: 1.6rem;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-section {
-  padding: 5rem 0;
 }
 
 /* nav */
-nav.navbar {
-  z-index: 999;
-  padding: 0.7rem 1rem !important;
+.navbar .navbar-brand img {
+  width: 4rem;
 }
 
-.navbar-brand {
-  width: 60px;
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: larger;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.nav-link {
-  color: rgba(0, 0, 0, 0.8) !important;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-right: 2.5rem;
-}
-
-.nav-link:hover {
-  color: #00ffff !important;
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--nav-color);
 }
 
 .active {
-  color: #00ffff !important;
-}
-
-button.navbar-toggler {
-  background: unset;
-  border: unset;
-  outline: unset;
-}
-
-.navbar .fa-angle-down {
-  margin-left: 0.6rem;
-}
-
-.navbar .dropdown-menu .dropdown-item {
-  font-size: 1.2rem;
+  color: var(--nav-color) !important;
 }
 
 /* jumbotron */
-.jumbotron {
-  background-image: url("../img/pulau1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.jumbotron.jumbotron-fluid {
+  background: url(../img/bg-pulau.jpg);
   width: 100%;
-  position: relative;
-  margin-top: 6rem;
+  height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 45% 0;
 }
 
-.jumbotron .text-heading {
+.jumbotron .jumbotron__column__text {
+  margin-top: 6.5rem;
+}
+
+.jumbotron .jumbotron__column__text h1 {
   color: white;
   font-weight: 300;
-  margin-top: 6rem;
-  text-align: center;
+  display: none;
+  text-shadow: 2px 3px 5px black;
 }
 
-.jumbotron .text-heading span {
+.jumbotron .jumbotron__column__text h1 span {
   font-weight: 500;
 }
 
-.jumbotron .container {
-  z-index: 1;
-  position: relative;
+/* about */
+.about {
+  background: #fcfcfc;
+  padding: 20px;
+  margin-top: -2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* info-panel  */
-.container .info-panel {
-  margin-top: -4rem;
-  z-index: 2;
-  background-color: white;
-  border-radius: 10px;
-  padding: 1rem;
+.about p {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 0.8rem;
 }
 
-.info-panel img {
-  width: 5rem;
-  height: 3.2rem;
+/* destination */
+.destination {
+  margin: 4rem;
 }
 
-.info-panel p {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: black;
-  margin-left: 2px;
-  margin-top: 1.8rem;
-}
-
-.main {
-  margin-top: -4rem;
-}
-
-.main h1 {
-  font-weight: 600;
-  margin-bottom: 3rem;
-}
-
-.main h3 {
-  line-height: 0.8;
-}
-
-.main img {
-  margin-bottom: 3rem;
-}
-
-.main .isi {
-  position: relative;
-}
-
-.main span {
+.destination .title-item-gimmick .left {
   display: inline-block;
-  background: #00ffff;
-  color: white;
-  width: 3rem;
-  height: 2.5rem;
-  text-align: center;
-  border-radius: 1rem;
-  line-height: 2.5rem;
-  position: absolute;
-  top: 20%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.main p {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.7);
-  margin-left: 4rem;
-}
-
-.download {
-  padding: 30px 0;
-}
-
-.download h1 {
-  text-align: center;
-}
-
-.download hr {
-  width: 55%;
-  margin: 2rem auto 3rem;
-  border: 1px solid #ef8641;
-}
-
-.barcode {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.barcode-ios img,
-.barcode-android img {
-  width: 18rem;
-}
-
-.barcode-ios p,
-.barcode-android p {
-  font-weight: 600;
-  text-align: center;
-}
-
-.barcode p.android {
-  margin-left: 4rem;
-}
-
-.barcode p.ios {
-  margin-left: 6.4rem;
-}
-
-.app-store {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.app-store .android-store img,
-.app-store .ios-store img {
-  width: 15rem;
-}
-
-/* footer */
-.footer {
+.destination .title-item {
   position: relative;
-  background: #f1f1f1;
-  padding-top: 2rem;
 }
 
-.footer-top {
-  padding-bottom: 5rem;
+.destination .title-item h3 {
+  text-align: center;
+  font-weight: 500;
 }
 
-.footer-top .footer-item {
-  padding-top: 0.8rem;
+.destination .card {
+  margin: 30px -40px;
 }
 
-.footer-top .footer-link {
-  font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 300;
-  text-decoration: none;
+.destination .card:hover {
+  transform: scale(1.07);
+  transition: 0.3s;
 }
 
-.footer-link span {
-  color: var(--green);
-  font-weight: 600;
+.destination .card img {
+  height: 170px;
 }
 
-.footer-top h3 {
+.destination .card .card-body .card-text {
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* features */
+.features {
+  background: #fcfcfc;
+  padding: 50px;
+  margin-top: -4rem;
+}
+
+.features .title-item-job {
+  margin-left: 0;
   margin-top: 2rem;
-  font-weight: 600;
 }
 
-.footer-top .link-download img {
-  margin-top: 8px;
+.features .col-text-job {
+  position: relative;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 1.2rem;
+  margin-left: 0rem;
 }
 
-.footer-top .follow-us img {
-  margin-right: 5px;
+.features .col-text-job p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
 }
 
-.footer-top .follow-us a {
-  text-decoration: none;
-}
-
-.footer .footer-bottom {
+.features .col-text-job p::before {
+  content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  background: #f1f1f1;
+  display: block;
+  width: 12px;
+  height: 12px;
+  left: -0.37rem;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--primary-color);
 }
 
-.footer-bottom p {
-  text-transform: capitalize;
-  font-size: 1.1rem;
+/* kelebihan */
+.features .title-item-kelebihan {
+  margin-top: 4rem;
 }
 
-.footer-bottom span {
-  color: var(--green);
+.features .col-text-features p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  /* navbar */
-  .navbar-brand {
-    width: 80px;
+.features .col-text-features {
+  position: relative;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 1.2rem;
+  margin-left: 0;
+  margin-bottom: 3rem;
+}
+
+.features .col-text-features p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  left: -0.37rem;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--primary-color);
+}
+
+.features img.browsur {
+  height: 435px;
+  width: 450px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .destination .card {
+    margin: 30px auto;
   }
 
-  .nav-link {
-    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin-left: 50px;
   }
 
-  .jumbotron {
-    height: 450px;
-    background-position-x: 0px;
-  }
-
-  .jumbotron .text-heading {
+  /* jumbotron */
+  .jumbotron .jumbotron__column__text h1 {
     color: white;
-    margin-top: 11rem;
-    font-size: 4rem;
+    font-weight: 300;
   }
 
-  /* info-panel */
-  .container .info-panel {
-    margin-top: -8rem;
-    z-index: 2;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem 0.5rem;
+  /* about */
+  .about p {
+    text-align: left;
+    font-size: 1rem;
   }
 
-  .info-panel p {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.6);
-    margin-left: 2px;
-    margin-top: 1.8rem;
+  /* destination */
+  .destination .card-destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .info-panel .friendly img {
-    margin-top: -6px;
-    width: 5rem;
-    height: 3rem;
-  }
-
-  /* download */
-  .download h1 {
-    font-size: 3rem;
-  }
-
-  .download hr {
-    width: 45%;
-    margin: 2rem auto 3rem;
-    border: 1px solid #ef8641;
-  }
-
-  .app-store {
-    display: unset;
-  }
-
-  .app-store .android-store img,
-  .app-store .ios-store img {
+  .destination .card-destination .card {
     width: 20rem;
+    margin-left: -6rem;
+  }
+
+  .destination .title-item .title-item-gimmick {
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 15px;
+  }
+
+  .destination .title-item .title-item-gimmick.left {
+    position: absolute;
+    left: 0rem;
+    margin-left: -1rem;
+    width: 200px;
+  }
+
+  .destination .title-item .title-item-gimmick.right {
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+    width: 200px;
+  }
+
+  /* features */
+  .features {
+    margin-top: -4rem;
+  }
+
+  .features .title-item-job {
+    margin-left: 1.5rem;
+    margin-top: 0;
+  }
+
+  .features .col-text-job {
+    margin-left: 4rem;
+  }
+
+  .features .col-text-features {
+    margin-left: 4rem;
+    margin-bottom: 0rem;
+  }
+
+  /* kelebihan */
+  .features .title-item-kelebihan {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin-left: 50px;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    margin-top: 12px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--nav-color);
+    transition: width .3s;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+
+  .active::after {
+    content: '';
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--nav-color);
+  }
+
+  .jumbotron.jumbotron-fluid {
+    background-position: 0 -4.5rem;
+  }
+
+  .jumbotron .jumbotron__column__text h1 {
+    color: white;
+    font-weight: 300;
+    display: block;
+  }
+
+  /* about */
+  .about {
+    background: #fcfcfc;
+    padding: 20px;
+    margin-top: -2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .about h3 {
+    text-align: left !important;
+  }
+
+  .about p {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  /* destination */
+  .destination {
+    margin: 4rem;
+  }
+
+  .destination .title-item .title-item-gimmick {
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 15px;
+  }
+
+  .destination .title-item .title-item-gimmick.left {
+    position: absolute;
+    left: 0rem;
+    margin-left: -1rem;
+    width: 310px;
+  }
+
+  .destination .title-item .title-item-gimmick.right {
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+    width: 310px;
+  }
+
+  .destination .title-item {
+    position: relative;
+  }
+
+  .destination .title-item h3 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .destination .card {
+    margin: 30px -10px;
+    width: 13.5rem;
+  }
+
+  .destination .card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+
+  .destination .card img {
+    height: 170px;
+  }
+
+  .destination .card .card-body .card-text {
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* features */
+  .features {
+    margin-top: -5rem;
+  }
+
+  .features .title-item-job {
+    margin-left: 1rem;
     margin-top: 1rem;
+  }
+
+  .features .col-text-job {
+    margin-left: 2rem;
+  }
+
+  .features .col-text-job p {
+    margin-left: 1.5rem;
+  }
+
+  /* kelebihan */
+  .features .title-item-kelebihan {
+    margin-top: 4rem;
+  }
+
+  .features .col-text-features p {
+    margin-left: 2rem;
+  }
+
+  .features .col-text-features {
+    margin-left: 2.5rem;
+  }
+
+  .features img.browsur {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 435px;
+    width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
-  /* navbar */
-  .navbar-brand {
-    width: 80px;
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin-left: 50px;
   }
 
-  .nav-link {
-    font-size: 1.5rem;
+  .navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    margin-top: 12px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--nav-color);
+    transition: width .3s;
   }
 
-  .jumbotron {
-    height: 500px;
+  .navbar .navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
   }
 
-  .jumbotron .text-heading {
+  .navbar .navbar-nav .nav-item .nav-link.active::after {
+    content: '';
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--nav-color);
+  }
+
+  .jumbotron.jumbotron-fluid {
+    background-position: 0 -9rem;
+  }
+
+  .jumbotron .jumbotron__column__text h1 {
     color: white;
-    margin-top: 11rem;
-    font-size: 5rem;
-    margin-bottom: 2rem;
+    font-weight: 300;
+    display: block;
   }
 
-  /*   info-panel */
-  .container .info-panel {
-    margin-top: -8rem;
-    z-index: 2;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem 0.5rem;
-  }
-  /* main */
-
-  .main {
-    margin-top: -3rem;
+  /* about */
+  .about {
+    background: #fcfcfc;
+    padding: 20px;
+    margin-top: -2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .main h3 {
-    font-size: 2rem;
+  .about h3 {
+    text-align: left !important;
   }
 
-  .main h1 {
-    font-size: 3rem;
-    line-height: 1;
+  .about p {
+    text-align: left;
+    font-size: 1rem;
   }
 
-  .main .keterangan {
-    margin-left: 4rem;
+  /* destination */
+  .destination {
+    margin: 4rem;
   }
 
-  .main span {
-    background: #00ffff;
-    color: white;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    line-height: 3rem;
-    font-size: 1.3rem;
-    top: 0.5rem;
+  .destination .title-item .title-item-gimmick {
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 15px;
   }
 
-  .main p {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-top: 2.5rem;
-    margin-left: 4.4rem;
+  .destination .title-item .title-item-gimmick.left {
+    position: absolute;
+    left: 0rem;
+    margin-left: -1rem;
+    width: 450px;
   }
 
-  /* download */
-  .download h1 {
-    font-size: 3.5rem;
+  .destination .title-item .title-item-gimmick.right {
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+    width: 450px;
   }
 
-  .download hr {
-    width: 30%;
-    margin: 2rem auto 5rem;
-    border: 1px solid #ef8641;
+  .destination .title-item {
+    position: relative;
   }
 
-  .app-store {
-    display: unset;
+  .destination .title-item h3 {
+    text-align: center;
+    font-weight: 500;
   }
 
-  .app-store .android-store img,
-  .app-store .ios-store img {
-    width: 24rem;
+  .destination .card {
+    margin: 30px -5px;
+    width: 17rem;
+  }
+
+  .destination .card:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+  }
+
+  .destination .card img {
+    height: 170px;
+  }
+
+  .destination .card .card-body .card-text {
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* features */
+  .features {
+    margin-top: -5rem;
+  }
+
+  .features .title-item-job {
+    margin-left: 1rem;
     margin-top: 1rem;
+  }
+
+  .features .col-text-job {
+    margin-left: 2rem;
+  }
+
+  .features .col-text-job p {
+    margin-left: 1.5rem;
+  }
+
+  /* kelebihan */
+  .features .title-item-kelebihan {
+    margin-top: 5rem;
+  }
+
+  .features .col-text-features p {
+    margin-left: 2rem;
+  }
+
+  .features .col-text-features {
+    margin-left: 2.5rem;
+  }
+
+  .features img.browsur {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 435px;
+    width: 450px;
   }
 }
