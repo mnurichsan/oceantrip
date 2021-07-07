@@ -1,178 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.css" />
-
-  <!-- style css -->
-  <link rel="stylesheet" href="css/style.css" />
-
+  <!-- title -->
   <title>Ocean Trip</title>
+
+  <!-- css -->
+  <link rel="icon" href="assets/img/logo.png">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
 </head>
+<body id="home">
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light shadow">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Destination</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-      </div>
+  <!-- navbar -->
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="assets/img/logo.png" alt="logo" style="width: 55px;" class="img-fluid">
     </div>
-  </nav>
-
-  <div class="hero">
-      <div class="hero__column__text">
-        <h1>Wisata ke <span>Pulau-pulau</span> dengan <span>edukasi</span> serta
-          <span>keamanan</span> dengan harga yang <span>Murah</span>.
-        </h1>
-		<a href="#">Pesan Sekarang</a>		
+    <div class="nav-box nav-box1">
+      <ul class="nav-list">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#popular">Populer</a></li>
+        <li><a href="#package">Paket</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#contact">Hubungi Kami</a></li>
+      </ul>
+    </div>
+    <div class="nav-box nav-box2">
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-	  <div class="hero__column__img">
-		<img src="img/kerjakan.jpg">
-	  </div>
     </div>
   </div>
+  <!-- end of navbar -->
 
- <!-- <section class="about">
-    <div class="container">
-      <div class="col-12">
-        <h3 class="text-center">Selamat Datang di Ocean Travel</h3>
-        <p>Ocean trip adalah Agen yang bergerak dalam bidang pelayanan jasa wisata ke Pulau-pulau Spermonde dan
-          memberikan edukasi serta keamanan dengan harga yang Murah.</p>
+  <!-- header -->
+  <section class="header">
+    <div class="container-custom">
+      <div class="header-content">
+        <div class="row">
+          <div class="col-md-6 my-auto mx-auto" data-aos="zoom-in">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <img src="assets/img/header.png" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 my-auto mx-auto">
+            <div class="flex-column my-4">
+              <h2 class="text-poppins font-weight-bold mb-1" data-aos="fade-left" data-aos-delay="100">Welcome to Ocean Trip</h2>
+              <p class="d-block text-black-50" data-aos="fade-left" data-aos-delay="200">
+                Sebuah agen penyedia layanan pengantaran untuk rekreasi ke pulau-pulau sekitar makassar yang terpercaya serta memprioritaskan keamanan dan kenyamanan bagi wisatawan yang ingin menggunakan jasa kami.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section> -->
-
-  <section class="destination">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-12">
-          <div class="title-item">
-            <div class="title-item-gimmick left"></div>
-            <h3>Top Destination</h3>
-            <div class="title-item-gimmick right"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row card-destination">
-        <div class="col-md-3">
-          <div class="card shadow bg-white rounded">
-            <img src="img/samalona.jpg" class="card-img-top" alt="samalona">
-            <div class="card-body">
-              <h5 class="card-title">Pulau Samalona</h5>
-              <p class="card-text">Fun Snorkeling Trip di Pulau Samalona.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card shadow bg-white rounded">
-            <img src="img/pulau2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card shadow bg-white rounded">
-            <img src="img/pulau3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card shadow bg-white rounded">
-            <img src="img/pulau3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
   </section>
+  <!-- end of header -->
 
-  <section class="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 d-flex align-items-center">
-          <img src="img/meet.jpeg" alt="" class="img-fluid ml-md-4">
+  <!-- popular place -->
+  <section class="popular" id="popular">
+    <div class="container-custom">
+      <div class="popular-content">
+        <div class="row">
+          <div class="col mb-4">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <h3 class="text-poppins font-weight-bold mb-1" data-aos="fade-up">Tempat Populer</h3>
+              <span class="text-poppins" data-aos="fade-up" data-aos-delay="100">Lihat Tempat Paling Unggulan</span>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <h4 class="title-item-job">Apa Yang Kami Kerjakan</h4>
-          <div class="col-text-job">
-            <p>Memberikan edukasi kepada siswa SMA dan masyarakat umum tentang keadaan ekosistem laut</p>
-            <p>Memberikan kenyamanan wisatawan dalam berekreasi ke pulau-pulau dengan menyediakan paket
-              menarik di liburan akhir pekan.</p>
-            <p>Membantu masyarakat menemukan agen perjalanan wisata ke pulau-pulau yang terpercaya dengan
-              keamanan dan harga yang murah. </p>
+        <div class="row">
+          <div class="col-md-4 mx-auto" data-aos="fade-in">
+            <div class="popular-card">
+              <div class="popular-card-header">
+                <img src="assets/img/dest1.jpg" alt="destination" class="popular-card-image" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+              <div class="popular-card-body">
+                <h4 class="text-poppins font-weight-bold text-center" data-aos="fade-up" data-aos-delay="200">Pulau Kayangan</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto" data-aos="fade-in" data-aos-delay="100">
+            <div class="popular-card">
+              <div class="popular-card-header">
+                <img src="assets/img/dest2.jpg" alt="destination" class="popular-card-image" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+              <div class="popular-card-body">
+                <h4 class="text-poppins font-weight-bold text-center" data-aos="fade-up" data-aos-delay="200">Pulau Samalona</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto" data-aos="fade-in" data-aos-delay="200">
+            <div class="popular-card">
+              <div class="popular-card-header">
+                <img src="assets/img/dest3.png" alt="destination" class="popular-card-image" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+              <div class="popular-card-body">
+                <h4 class="text-poppins font-weight-bold text-center" data-aos="fade-up" data-aos-delay="200">Pulau Kodingareng</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- end of popular place -->
 
-      <div class="row mt-md-2">
-        <div class="col-12 col-md-6">
-          <h4 class="title-item-kelebihan ml-md-4">Kelebihan Kami</h4>
-          <div class="col-text-features">
-            <p>Kami menyediakan layanan pengantaran untuk rekreasi ke pulau-pulau Spermonde.</p>
-            <p>Memprioritaskan keamanan dan kenyamanan bagi wisatawan yang ingin memakai jasa kami untuk
-              menikmati keindahan pulau.</p>
-            <p>Meningkatkan pertumbuhan ekonomi di bidang wisata dengan membuka lapangan kerja bagi
-              masyarakat pesisir pulau.</p>
-            <p>Memberikan pengetahuan kepada wisatawan tentang ekosistem laut.
-            </p>
-
+  <section class="package" id="package">
+    <div class="container-custom">
+      <div class="package-content">
+        <div class="row">
+          <div class="col mb-4">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <h3 class="text-poppins font-weight-bold mb-1" data-aos="fade-up">Paket</h3>
+              <span class="text-poppins" data-aos="fade-up" data-aos-delay="100">Tersedia paket menarik</span>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 d-flex align-items-center">
-          <img src="img/eduardo-nascimento-_WWhXbzo72Q-unsplash.jpg" alt="" class="img-fluid  mt-md-n1 ml-md-n1">
+        <div class="row">
+          <div class="col-md-4 mx-auto" data-aos="fade-in">
+            <div class="package-card">
+              <div class="package-card-header">
+                <img src="assets/img/package1.jpg" alt="destination" class="package-card-image" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+              <div class="package-card-body">
+                <h4 class="text-poppins font-weight-bold text-center" data-aos="fade-up" data-aos-delay="200">Snorkeling</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto" data-aos="fade-in" data-aos-delay="100">
+            <div class="package-card">
+              <div class="package-card-header">
+                <img src="assets/img/package2.jpg" alt="destination" class="package-card-image" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+              <div class="package-card-body">
+                <h4 class="text-poppins font-weight-bold text-center" data-aos="fade-up" data-aos-delay="200">Scuba Diving</h4>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto" data-aos="fade-in" data-aos-delay="200">
+            <div class="package-card">
+              <div class="package-card-header">
+                <img src="assets/img/package3.jpg" alt="destination" class="package-card-image" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+              <div class="package-card-body">
+                <h4 class="text-poppins font-weight-bold text-center" data-aos="fade-up" data-aos-delay="200">Fun Trip</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <!-- about -->
+  <section class="about" id="about">
+    <div class="container-custom">
+      <div class="about-content">
+        <div class="row">
+          <div class="col mb-4">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <h3 class="text-poppins font-weight-bold mb-1" data-aos="fade-up">Tentang Kami</h3>
+              <span class="d-block text-black-50" data-aos="fade-up" data-aos-delay="100">Jelajahi pulau dengan kami</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 my-auto mc-auto" data-aos="zoom-in">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <img src="assets/img/about.png" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-5 my-auto mx-auto" data-aos="fade-left">
+            <div class="my-3">
+              <h3 class="text-poppins font-weight-bold" data-aos="fade-left" data-aos-delay="100">Kenapa Memilih Kami?</h3>
+              <p class="d-block text-black-50 mb-4" data-aos="fade-left" data-aos-delay="200">
+                Ocean Trip adalah sebuah agen perjalanan yang menyediakan pelayanan bagi masyarakat/wisatawan yang ingin mengunjungi pulau-pulau disekitar Makassar dengan beragam paket menarik dan pemandu yang sudah berlisensi selam serta memberikan edukasi tentang keadaan ekosistem laut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end kf about -->
+
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="container-custom">
+      <div class="contact-content">
+        <div class="row">
+          <div class="col mb-3">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <h3 class="text-poppins font-weight-bold mb-1" data-aos="fade-up">Hubungi Kami</h3>
+              <span class="d-block text-black-50" data-aos="fade-up" data-aos-delay="100">Temukan Kami di</span>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="offset-md-2 col-md-3">
+            <div class="card shadow-lg mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2 my-auto">
+                      <svg class="w-6 h-6 my-auto" style="width: 40px;color:cornflowerblue;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                  </div>
+                  <div class="col">
+                    <p>Silahkan hubungi jika anda ingin memesan</p>
+                    <h4 class="card-title" style="color:cornflowerblue;">+6281242322077</h4>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2 my-auto">
+                    <svg class="w-6 h-6" style="width: 40px;color:rgb(240, 69, 57);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  </div>
+                  <div class="col">
+                    <h4 class="card-title" style="color:cornflowerblue;">Alamat Kami</h4>
+                    <p>Jln. Taman Sudiang Indah Blok L8 No. 20, Kota Makassar, Sulawesi Selatan</p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <iframe class="border p-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.099375924064!2d119.52122731412705!3d-5.08762915301589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefb916f5bee67%3A0x7cb00c7f7cfbcd32!2sJl.%20Taman%20Sudiang%20Indah%2C%20Kec.%20Biringkanaya%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090242!5e0!3m2!1sid!2sid!4v1625655439021!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of gallery -->
+
+  <!-- footer -->
+  <footer class="footer mt-5">
+    <div class="container-custom">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col mx-auto">
+            <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <div class="footer-logo mx-auto">
+                <h4 class="text-poppins font-weight-bold text-white">OCEAN TRIP</h4>
+              </div>
+              <div class="footer-link mx-auto">
+                <a href="#home" class="text-light">Home</a>
+                <a href="#popular" class="text-light">Populer</a>
+                <a href="#about" class="text-light">Tentang Kami</a>
+                <a href="#contact" class="text-light">Hubungi Kami</a>
+              </div>
+              <div class="footer-icon my-3 mx-auto">
+                <a href="https://www.instagram.com/oceantrip.id/" class="text-light"><i class="fab fa-fw fa-instagram"></i></a>
+              </div>
+              <div class="footer-marker">
+                <span class="d-block text-poppins font-weight-light text-light"> <a href="#home" class="text-white font-weight-bold">©Copyright Ocean Trip</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <!-- javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/script.js"></script>
+
 </body>
-
 </html>
